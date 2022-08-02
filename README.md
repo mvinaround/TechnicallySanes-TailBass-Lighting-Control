@@ -13,3 +13,7 @@ https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/blob/ma
 
 
 Or compile and run yourself. The Compiled link above is for people just wanting to use the software ^_^
+
+## Demo
+Video demo:
+https://www.youtube.com/watch?v=a5O1LbQ7DEI&ab_channel=TechnicallySane
