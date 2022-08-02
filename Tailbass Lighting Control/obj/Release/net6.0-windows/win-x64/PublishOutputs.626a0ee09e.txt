@@ -1,0 +1,2 @@
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\win-x64\Tailbass Lighting Control.pdb
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\win-x64\Tailbass Lighting Control.exe

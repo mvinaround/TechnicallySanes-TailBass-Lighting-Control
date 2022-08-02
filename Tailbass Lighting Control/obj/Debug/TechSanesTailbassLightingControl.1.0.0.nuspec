@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TechSanesTailbassLightingControl</id>
+    <version>1.0.0</version>
+    <authors>TechnicallySane</authors>
+    <description>Custom Lighting control for the VRChat based club Tailbass.
+
+Software Developed by TechnicallySane</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net6.0-windows7.0/favicon (1).ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.runtimeconfig.json" target="lib\net6.0-windows7.0\Tailbass Lighting Control.runtimeconfig.json" />
+    <file src="F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.dll" target="lib\net6.0-windows7.0\Tailbass Lighting Control.dll" />
+    <file src="F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\favicon (1).ico" target="content\favicon (1).ico" />
+    <file src="F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\favicon (1).ico" target="contentFiles\any\net6.0-windows7.0\favicon (1).ico" />
+  </files>
+</package>

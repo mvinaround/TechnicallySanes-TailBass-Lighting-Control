@@ -1,0 +1,36 @@
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.exe
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.deps.json
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.runtimeconfig.json
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.dll
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.pdb
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.AssemblyReference.cache
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.GenerateResource.cache
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.AssemblyInfoInputs.cache
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.AssemblyInfo.cs
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.dll
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\refint\Tailbass Lighting Control.dll
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.pdb
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.genruntimeconfig.cache
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\ref\Tailbass Lighting Control.dll
+C:\Users\Jamie\source\repos\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass_Lighting_Control.MainUI.resources
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.AssemblyReference.cache
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass_Lighting_Control.MainUI.resources
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.GenerateResource.cache
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.GeneratedMSBuildEditorConfig.editorconfig
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.AssemblyInfoInputs.cache
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.AssemblyInfo.cs
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.csproj.CoreCompileInputs.cache
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\refint\Tailbass Lighting Control.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.pdb
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.exe
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.deps.json
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.runtimeconfig.json
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Debug\net6.0-windows\Tailbass Lighting Control.pdb
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass Lighting Control.genruntimeconfig.cache
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\ref\Tailbass Lighting Control.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass_Lighting_Control.OBSLayer.resources
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Debug\net6.0-windows\Tailbass_Lighting_Control.Properties.Resources.resources
