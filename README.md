@@ -26,7 +26,7 @@ Next in OBS use Window Capture and select the OBS Layer window. Make sure that t
 
 If you're planning to use regular content mapped across all the TailBass screens then you want to follow the tutorial video below, this shows you how to add the nodes without covering the entire video feed!
 
-Transparent Node Layer (Required!):
+Transparent Node Layer (Required!): https://raw.githubusercontent.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/master/Tailbass%20Lighting%20Control/OBS%20Assets/BlackNodes.png
 
 *This also works to make the OBS Layer transparent!*
 
