@@ -32,6 +32,10 @@ Transparent Node Layer (Required!): https://raw.githubusercontent.com/mvinaround
 
 Video tutorial: https://www.youtube.com/watch?v=oj_KjvX2n_I
 
-
-
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/oj_KjvX2n_I/0.jpg)](https://www.youtube.com/watch?v=oj_KjvX2n_I)
+
+
+## Known Issues
+
+ - Having the OBS Layer window minimised or off screen stops the rendering of the pixels (This is a windows thing, ill attempt to fix it!) Having it nested under other windows works fine! 
+ - Windows flags the software as potentially dangerous, this is entirely due to the software not being used on many machines, there's nothing malicious in the software at all! (check the source code and compile yourself if you want!)
