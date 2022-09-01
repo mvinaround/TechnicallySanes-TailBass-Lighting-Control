@@ -11,6 +11,12 @@ https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/blob/ma
 
 
 Or compile and run yourself. The Compiled link above is for people just wanting to use the software ^_^
+## Features
+ - Control over all lighting in the Tailbass world!
+ - Premade Patterns
+ - Easy interface, just turn on what you want, choose a pattern and choose your colours!
+ - Scene saving. Set a show file and you can save your current lighting settings and colours to a scene button, and then recall instantly!
+ 
 
 ## Demo
 Video demo: https://www.youtube.com/watch?v=a5O1LbQ7DEI&ab_channel=TechnicallySane
