@@ -20,10 +20,22 @@ namespace Tailbass_Lighting_Control
 		public static int BeatNo = 1;
 		public static bool PatternEngineBPMPushColours = true;
 
+		public static bool RefreshColoursFromRAM = false;
+
 		//Global colours?
 		public static bool GlobalMode = false;
-		public static string GlobalColour1 = "000000000";
-		public static string GlobalColour2 = "000000000";
+		public static Int32 GlobalColour1 = 0;
+		public static Int32 GlobalColour2 = 0;
+
+		//Pattern Modes
+		public static int GlobalPattern = 0;
+		public static int LasersPattern = 0;
+		public static int BackLightsPattern = 0;
+		public static int TopLightsPattern = 0;
+		public static int LeftLightsPattern = 0;
+		public static int RightLightsPattern = 0;
+		public static int BoothLightsPattern = 0;
+
 
 		//Light Toggles
 		public static bool LasersToggle = false;
@@ -42,18 +54,18 @@ namespace Tailbass_Lighting_Control
 		public static bool BoothlightsIIS = true;
 
 		//Colour Vars
-		public static string LasersColour1 = "000000000";
-		public static string LasersColour2 = "000000000";
-		public static string BacklightsColour1 = "000000000";
-		public static string BacklightsColour2 = "000000000";
-		public static string ToplightsColour1 = "000000000";
-		public static string ToplightsColour2 = "000000000";
-		public static string LeftlightsColour1 = "000000000";
-		public static string LeftlightsColour2 = "000000000";
-		public static string RightlightsColour1 = "000000000";
-		public static string RightlightsColour2 = "000000000";
-		public static string BoothlightsColour1 = "000000000";
-		public static string BoothlightsColour2 = "000000000";
+		public static Int32 LasersColour1 = 0;
+		public static Int32 LasersColour2 = 0;
+		public static Int32 BacklightsColour1 = 0;
+		public static Int32 BacklightsColour2 = 0;
+		public static Int32 ToplightsColour1 = 0;
+		public static Int32 ToplightsColour2 = 0;
+		public static Int32 LeftlightsColour1 = 0;
+		public static Int32 LeftlightsColour2 = 0;
+		public static Int32 RightlightsColour1 = 0;
+		public static Int32 RightlightsColour2 = 0;
+		public static Int32 BoothlightsColour1 = 0;
+		public static Int32 BoothlightsColour2 = 0;
 
 		//LightOutput
 		public static Int32 Laser1 = 0;
@@ -99,11 +111,11 @@ namespace Tailbass_Lighting_Control
 			this.KeyPreview = true;
 		}
 
-		public static string ColourSelectMulti()
+		public static Int32 ColourSelectMulti()
 		{
 			ColorDialog MasterSelector = new ColorDialog();
 			MasterSelector.ShowDialog();
-			string code = MasterSelector.Color.ToArgb().ToString();
+			Int32 code = Convert.ToInt32(MasterSelector.Color.ToArgb());
 
 			return code;
 		}
@@ -120,6 +132,10 @@ namespace Tailbass_Lighting_Control
 			{
 				BPMStopwatchActive = false;
 				BPMLabel.Text = BPMReadable.ToString();
+				if (Convert.ToInt32(BPMReadable) > 1000)
+				{
+					BPMReadable = 1000;
+				}
 				BPMSetVal.Value = Convert.ToInt32(BPMReadable);
 				BPMTimer.Interval = Convert.ToInt32(BPMTimeInMS);
 				PatternEngineBPM.Interval = Convert.ToInt32(BPMTimeInMS);
@@ -167,22 +183,17 @@ namespace Tailbass_Lighting_Control
 			StrobeClock.Start();
 		}
 
-		private void button15_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void button14_Click(object sender, EventArgs e)
 		{
 			GlobalColour2 = ColourSelectMulti();
-			this.GlobalColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour2));
+			GlobalColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour2));
 			Debug.WriteLine("Global Colour 2: " + GlobalColour2.ToString());
 		}
 
 		private void GlobalColour1Button_Click(object sender, EventArgs e)
 		{
 			GlobalColour1 = ColourSelectMulti();
-			this.GlobalColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour1));
+			GlobalColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour1));
 			Debug.WriteLine("Global Colour 1: " + GlobalColour1.ToString());
 		}
 
@@ -196,25 +207,25 @@ namespace Tailbass_Lighting_Control
 		private void LasersColour1Button_Click(object sender, EventArgs e)
 		{
 			LasersColour1 = ColourSelectMulti();
-			this.LasersColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour1));
+			LasersColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour1));
 		}
 
 		private void LasersColour2Button_Click(object sender, EventArgs e)
 		{
 			LasersColour2 = ColourSelectMulti();
-			this.LasersColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour2));
+			LasersColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour2));
 		}
 
 		private void BacklightsColour1Button_Click(object sender, EventArgs e)
 		{
 			BacklightsColour1 = ColourSelectMulti();
-			this.BacklightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour1));
+			BacklightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour1));
 		}
 
 		private void BacklightsColour2Button_Click(object sender, EventArgs e)
 		{
 			BacklightsColour2 = ColourSelectMulti();
-			this.BacklightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour2));
+			BacklightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour2));
 		}
 
 		private void PatternEngine_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
@@ -230,12 +241,119 @@ namespace Tailbass_Lighting_Control
 			else if (BeatNo == 2) { BeatNo = 3; }
 			else if (BeatNo == 1) { BeatNo = 2; }
 
+			if(RefreshColoursFromRAM == true)
+			{
+				RefreshColoursFromRAM = false;
+
+				//Global Stuff
+
+				if(GlobalMode)
+				{
+					GlobalModeToggleButton.ForeColor = Color.Lime;
+					GlobalModeToggleButton.Text = "Global Mode On";
+				}
+				else
+				{
+					GlobalModeToggleButton.ForeColor = Color.Red;
+					GlobalModeToggleButton.Text = "Global Mode Off";
+				}
+				GlobalColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour1));
+				GlobalColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(GlobalColour2));
+				GlobalPatternMode.SelectedIndex = GlobalPattern;
+
+				//Lasers
+				LasersColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour1));
+				LasersColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(LasersColour2));
+				LasersPatternMode.SelectedIndex = LasersPattern;
+
+				if (LasersToggle)
+				{
+					LasersToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					LasersToggleButton.ForeColor = Color.Red;
+				}
+
+				//Back Lights
+				BacklightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour1));
+				BacklightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(BacklightsColour2));
+				BacklightsPatternMode.SelectedIndex = BackLightsPattern;
+
+				if (BacklightsToggle)
+				{
+					BackLightsToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					BackLightsToggleButton.ForeColor = Color.Red;
+				}
+
+				//Booth Lights
+				BoothlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(BoothlightsColour1));
+				BoothlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(BoothlightsColour2));
+				BoothlightsPatternMode.SelectedIndex = BoothLightsPattern;
+
+				if (BoothlightsToggle)
+				{
+					BoothLightsToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					BoothLightsToggleButton.ForeColor = Color.Red;
+				}
+
+				//Top Lights
+				ToplightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(ToplightsColour1));
+				ToplightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(ToplightsColour2));
+				ToplightsPatternMode.SelectedIndex = TopLightsPattern;
+
+				if (ToplightsToggle)
+				{
+					TopLightsToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					TopLightsToggleButton.ForeColor = Color.Red;
+				}
+
+				//Left Lights
+				LeftlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(LeftlightsColour1));
+				LeftlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(LeftlightsColour2));
+				LeftlightsPatternMode.SelectedIndex = LeftLightsPattern;
+
+				if (LeftlightsToggle)
+				{
+					LeftLightsToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					LeftLightsToggleButton.ForeColor = Color.Red;
+				}
+
+				//Right Lights
+				RightlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(RightlightsColour1));
+				RightlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(RightlightsColour2));
+				RightlightsPatternMode.SelectedIndex = RightLightsPattern;
+
+				if (RightlightsToggle)
+				{
+					RightLightsToggleButton.ForeColor = Color.Lime;
+				}
+				else
+				{
+					RightLightsToggleButton.ForeColor = Color.Red;
+				}
+
+
+			}
+
 			if (GlobalMode)
 			{
 				//Global Mode On
 
 				//Check Which Pattern Is Selected, IF BPM based then it works somewhere here
-				if (GlobalPatternMode.SelectedIndex == 0) //Solid Colour
+				if (GlobalPattern == 0) //Solid Colour
 				{
 					Laser1 = Convert.ToInt32(GlobalColour1);
 					Laser2 = Convert.ToInt32(GlobalColour1);
@@ -256,7 +374,7 @@ namespace Tailbass_Lighting_Control
 
 					PatternEngineBPMPushColours = true;
 				}
-				else if (GlobalPatternMode.SelectedIndex == 1) //Split
+				else if (GlobalPattern == 1) //Split
 				{
 					Laser1 = Convert.ToInt32(GlobalColour1);
 					Laser2 = Convert.ToInt32(GlobalColour2);
@@ -277,7 +395,7 @@ namespace Tailbass_Lighting_Control
 
 					PatternEngineBPMPushColours = true;
 				}
-				else if (GlobalPatternMode.SelectedIndex == 2) //Alternating
+				else if (GlobalPattern == 2) //Alternating
 				{
 					if (BeatNo == 1 || BeatNo == 3)
 					{
@@ -322,7 +440,7 @@ namespace Tailbass_Lighting_Control
 						PatternEngineBPMPushColours = true;
 					}
 				}
-				else if (GlobalPatternMode.SelectedIndex == 3) //Alternating Split
+				else if (GlobalPattern == 3) //Alternating Split
 				{
 					if (BeatNo == 1 || BeatNo == 3)
 					{
@@ -375,17 +493,17 @@ namespace Tailbass_Lighting_Control
 				//Lasers
 				if (LasersToggle)
 				{
-					if (LasersPatternMode.SelectedIndex == 0)
+					if (LasersPattern == 0)
 					{
 						Laser1 = Convert.ToInt32(LasersColour1);
 						Laser2 = Convert.ToInt32(LasersColour1);
 					}
-					if (LasersPatternMode.SelectedIndex == 1)
+					if (LasersPattern == 1)
 					{
 						Laser1 = Convert.ToInt32(LasersColour1);
 						Laser2 = Convert.ToInt32(LasersColour2);
 					}
-					if (LasersPatternMode.SelectedIndex == 2)
+					if (LasersPattern == 2)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -399,7 +517,7 @@ namespace Tailbass_Lighting_Control
 						}
 					}
 
-					if (LasersPatternMode.SelectedIndex == 3)
+					if (LasersPattern == 3)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -419,17 +537,17 @@ namespace Tailbass_Lighting_Control
 				//Back Lights
 				if (BacklightsToggle)
 				{
-					if (BacklightsPatternMode.SelectedIndex == 0)
+					if (BackLightsPattern == 0)
 					{
 						Back1 = Convert.ToInt32(BacklightsColour1);
 						Back2 = Convert.ToInt32(BacklightsColour1);
 					}
-					if (BacklightsPatternMode.SelectedIndex == 1)
+					if (BackLightsPattern == 1)
 					{
 						Back1 = Convert.ToInt32(BacklightsColour1);
 						Back2 = Convert.ToInt32(BacklightsColour2);
 					}
-					if (BacklightsPatternMode.SelectedIndex == 2)
+					if (BackLightsPattern == 2)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -443,7 +561,7 @@ namespace Tailbass_Lighting_Control
 						}
 					}
 
-					if (BacklightsPatternMode.SelectedIndex == 3)
+					if (BackLightsPattern == 3)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -463,17 +581,17 @@ namespace Tailbass_Lighting_Control
 				//Booth Lights
 				if (BoothlightsToggle)
 				{
-					if (BoothlightsPatternMode.SelectedIndex == 0)
+					if (BoothLightsPattern == 0)
 					{
 						BoothLeft = Convert.ToInt32(BoothlightsColour1);
 						BoothRight = Convert.ToInt32(BoothlightsColour1);
 					}
-					if (BoothlightsPatternMode.SelectedIndex == 1)
+					if (BoothLightsPattern == 1)
 					{
 						BoothLeft = Convert.ToInt32(BoothlightsColour1);
 						BoothRight = Convert.ToInt32(BoothlightsColour2);
 					}
-					if (BoothlightsPatternMode.SelectedIndex == 2)
+					if (BoothLightsPattern == 2)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -487,7 +605,7 @@ namespace Tailbass_Lighting_Control
 						}
 					}
 
-					if (BoothlightsPatternMode.SelectedIndex == 3)
+					if (BoothLightsPattern == 3)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -507,42 +625,42 @@ namespace Tailbass_Lighting_Control
 				//Top Lights
 				if (ToplightsToggle)
 				{
-					if(ToplightsPatternMode.SelectedIndex == 0)
+					if(TopLightsPattern == 0)
 					{
 						Top1 = Convert.ToInt32(ToplightsColour1);
 						Top2 = Convert.ToInt32(ToplightsColour1);
 						Top3 = Convert.ToInt32(ToplightsColour1);
 						Top4 = Convert.ToInt32(ToplightsColour1);
 					}
-					if (ToplightsPatternMode.SelectedIndex == 1)
+					if (TopLightsPattern == 1)
 					{
 						Top1 = Convert.ToInt32(ToplightsColour1);
 						Top2 = Convert.ToInt32(ToplightsColour1);
 						Top3 = Convert.ToInt32(ToplightsColour2);
 						Top4 = Convert.ToInt32(ToplightsColour2);
 					}
-					if (ToplightsPatternMode.SelectedIndex == 2)
+					if (TopLightsPattern == 2)
 					{
 						Top1 = Convert.ToInt32(ToplightsColour1);
 						Top2 = Convert.ToInt32(ToplightsColour2);
 						Top3 = Convert.ToInt32(ToplightsColour2);
 						Top4 = Convert.ToInt32(ToplightsColour1);
 					}
-					if (ToplightsPatternMode.SelectedIndex == 3)
+					if (TopLightsPattern == 3)
 					{
 						Top1 = Convert.ToInt32(ToplightsColour1);
 						Top2 = 0;
 						Top3 = 0;
 						Top4 = Convert.ToInt32(ToplightsColour2);
 					}
-					if (ToplightsPatternMode.SelectedIndex == 4)
+					if (TopLightsPattern == 4)
 					{
 						Top1 = 0;
 						Top2 = Convert.ToInt32(ToplightsColour1);
 						Top3 = Convert.ToInt32(ToplightsColour2);
 						Top4 = 0;
 					}
-					if (ToplightsPatternMode.SelectedIndex == 5)
+					if (TopLightsPattern == 5)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -559,7 +677,7 @@ namespace Tailbass_Lighting_Control
 							Top4 = Convert.ToInt32(ToplightsColour1);
 						}
 					}
-					if (ToplightsPatternMode.SelectedIndex == 6)
+					if (TopLightsPattern == 6)
 					{
 						if (BeatNo == 1)
 						{
@@ -591,7 +709,7 @@ namespace Tailbass_Lighting_Control
 						}
 
 					}
-					if (ToplightsPatternMode.SelectedIndex == 7)
+					if (TopLightsPattern == 7)
 					{
 						if (BeatNo == 4)
 						{
@@ -630,19 +748,19 @@ namespace Tailbass_Lighting_Control
 				//Left Lights
 				if (LeftlightsToggle)
 				{
-					if (LeftlightsPatternMode.SelectedIndex == 0)
+					if (LeftLightsPattern == 0)
 					{
 						Left1 = Convert.ToInt32(LeftlightsColour1);
 						Left2 = Convert.ToInt32(LeftlightsColour1);
 						Left3 = Convert.ToInt32(LeftlightsColour1);
 					}
-					if (LeftlightsPatternMode.SelectedIndex == 1)
+					if (LeftLightsPattern == 1)
 					{
 						Left1 = Convert.ToInt32(LeftlightsColour1);
 						Left2 = Convert.ToInt32(LeftlightsColour2);
 						Left3 = Convert.ToInt32(LeftlightsColour1);
 					}
-					if (LeftlightsPatternMode.SelectedIndex == 2)
+					if (LeftLightsPattern == 2)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -657,7 +775,7 @@ namespace Tailbass_Lighting_Control
 							Left3 = Convert.ToInt32(LeftlightsColour2);
 						}
 					}
-					if (LeftlightsPatternMode.SelectedIndex == 3)
+					if (LeftLightsPattern == 3)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -672,7 +790,7 @@ namespace Tailbass_Lighting_Control
 							Left3 = Convert.ToInt32(LeftlightsColour2);
 						}
 					}
-					if (LeftlightsPatternMode.SelectedIndex == 4)
+					if (LeftLightsPattern == 4)
 					{
 						if (BeatNo == 1)
 						{
@@ -699,7 +817,7 @@ namespace Tailbass_Lighting_Control
 							Left3 = Convert.ToInt32(LeftlightsColour2);
 						}
 					}
-					if (LeftlightsPatternMode.SelectedIndex == 5)
+					if (LeftLightsPattern == 5)
 					{
 						if (BeatNo == 4)
 						{
@@ -733,19 +851,19 @@ namespace Tailbass_Lighting_Control
 				//Right Lights
 				if (RightlightsToggle)
 				{
-					if (RightlightsPatternMode.SelectedIndex == 0)
+					if (RightLightsPattern == 0)
 					{
 						Right1 = Convert.ToInt32(RightlightsColour1);
 						Right2 = Convert.ToInt32(RightlightsColour1);
 						Right3 = Convert.ToInt32(RightlightsColour1);
 					}
-					if (RightlightsPatternMode.SelectedIndex == 1)
+					if (RightLightsPattern == 1)
 					{
 						Right1 = Convert.ToInt32(RightlightsColour1);
 						Right2 = Convert.ToInt32(RightlightsColour2);
 						Right3 = Convert.ToInt32(RightlightsColour1);
 					}
-					if (RightlightsPatternMode.SelectedIndex == 2)
+					if (RightLightsPattern == 2)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -760,7 +878,7 @@ namespace Tailbass_Lighting_Control
 							Right3 = Convert.ToInt32(RightlightsColour2);
 						}
 					}
-					if (RightlightsPatternMode.SelectedIndex == 3)
+					if (RightLightsPattern == 3)
 					{
 						if (BeatNo == 1 || BeatNo == 3)
 						{
@@ -775,7 +893,7 @@ namespace Tailbass_Lighting_Control
 							Right3 = Convert.ToInt32(RightlightsColour2);
 						}
 					}
-					if (RightlightsPatternMode.SelectedIndex == 4)
+					if (RightLightsPattern  == 4)
 					{
 						if (BeatNo == 1)
 						{
@@ -802,7 +920,7 @@ namespace Tailbass_Lighting_Control
 							Right3 = Convert.ToInt32(RightlightsColour2);
 						}
 					}
-					if (RightlightsPatternMode.SelectedIndex == 5)
+					if (RightLightsPattern == 5)
 					{
 						if (BeatNo == 4)
 						{
@@ -929,49 +1047,49 @@ namespace Tailbass_Lighting_Control
 		private void ToplightsColour1Button_Click(object sender, EventArgs e)
 		{
 			ToplightsColour1 = ColourSelectMulti();
-			this.ToplightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(ToplightsColour1));
+			this.ToplightsColour1Button.BackColor = Color.FromArgb(ToplightsColour1);
 		}
 
 		private void ToplightsColour2Button_Click(object sender, EventArgs e)
 		{
 			ToplightsColour2 = ColourSelectMulti();
-			this.ToplightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(ToplightsColour2));
+			this.ToplightsColour2Button.BackColor = Color.FromArgb(ToplightsColour2);
 		}
 
 		private void LeftlightsColour1Button_Click(object sender, EventArgs e)
 		{
 			LeftlightsColour1 = ColourSelectMulti();
-			this.LeftlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(LeftlightsColour1));
+			LeftlightsColour1Button.BackColor = Color.FromArgb(LeftlightsColour1);
 		}
 
 		private void LeftlightsColour2Button_Click(object sender, EventArgs e)
 		{
 			LeftlightsColour2 = ColourSelectMulti();
-			this.LeftlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(LeftlightsColour2));
+			LeftlightsColour2Button.BackColor = Color.FromArgb(LeftlightsColour2);
 		}
 
 		private void RightlightsColour1Button_Click(object sender, EventArgs e)
 		{
 			RightlightsColour1 = ColourSelectMulti();
-			this.RightlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(RightlightsColour1));
+			RightlightsColour1Button.BackColor = Color.FromArgb(RightlightsColour1);
 		}
 
 		private void RightlightsColour2Button_Click(object sender, EventArgs e)
 		{
 			RightlightsColour2 = ColourSelectMulti();
-			this.RightlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(RightlightsColour2));
+			RightlightsColour2Button.BackColor = Color.FromArgb(RightlightsColour2);
 		}
 
 		private void BoothlightsColour1Button_Click(object sender, EventArgs e)
 		{
 			BoothlightsColour1 = ColourSelectMulti();
-			this.BoothlightsColour1Button.BackColor = Color.FromArgb(Convert.ToInt32(BoothlightsColour1));
+			BoothlightsColour1Button.BackColor = Color.FromArgb(BoothlightsColour1);
 		}
 
 		private void BoothlightsColour2Button_Click(object sender, EventArgs e)
 		{
 			BoothlightsColour2 = ColourSelectMulti();
-			this.BoothlightsColour2Button.BackColor = Color.FromArgb(Convert.ToInt32(BoothlightsColour2));
+			BoothlightsColour2Button.BackColor = Color.FromArgb(BoothlightsColour2);
 		}
 
 		private void StrobeClock_Tick(object sender, EventArgs e)
@@ -1104,12 +1222,12 @@ namespace Tailbass_Lighting_Control
 
 		private void MainUI_KeyDown(object sender, KeyEventArgs e)
 		{
-			if (e.Control && e.KeyCode == Keys.Space)
+			if (e.KeyCode == Keys.Space)
 			{
 				BPMTapButton.PerformClick();
 			}
 
-			if (e.Control && e.KeyCode == Keys.S)
+			if (e.KeyCode == Keys.S)
 			{
 				StrobeActive = true;
 			}
@@ -1351,7 +1469,15 @@ namespace Tailbass_Lighting_Control
 
 		private void BPMLabel_Click(object sender, EventArgs e)
 		{
-			BPMPanel.Visible = true;
+			if (BPMPanel.Visible)
+			{
+				BPMPanel.Visible = false;
+			}
+			else
+			{
+				BPMPanel.Visible = true;
+			}
+			
 		}
 
 		private void SetBPMButton_Click(object sender, EventArgs e)
@@ -1396,6 +1522,41 @@ namespace Tailbass_Lighting_Control
 			BPMLabel.Text = Halfey.ToString();
 			BPMTimer.Interval = BPMinMS;
 			PatternEngineBPM.Interval = BPMinMS;
+		}
+
+		private void GlobalPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			GlobalPattern = GlobalPatternMode.SelectedIndex;
+		}
+
+		private void LasersPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			LasersPattern = LasersPatternMode.SelectedIndex;
+		}
+
+		private void BacklightsPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			BackLightsPattern = BacklightsPatternMode.SelectedIndex;	
+		}
+
+		private void ToplightsPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			TopLightsPattern = ToplightsPatternMode.SelectedIndex;
+		}
+
+		private void LeftlightsPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			LeftLightsPattern = LeftlightsPatternMode.SelectedIndex;
+		}
+
+		private void RightlightsPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			RightLightsPattern = RightlightsPatternMode.SelectedIndex;
+		}
+
+		private void BoothlightsPatternMode_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			BoothLightsPattern = BoothlightsPatternMode.SelectedIndex;	
 		}
 	}
 }

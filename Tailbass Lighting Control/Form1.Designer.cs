@@ -426,6 +426,7 @@
 			this.LasersPatternMode.Name = "LasersPatternMode";
 			this.LasersPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.LasersPatternMode.TabIndex = 26;
+			this.LasersPatternMode.SelectedIndexChanged += new System.EventHandler(this.LasersPatternMode_SelectedIndexChanged);
 			// 
 			// GlobalPatternMode
 			// 
@@ -444,6 +445,7 @@
 			this.GlobalPatternMode.Name = "GlobalPatternMode";
 			this.GlobalPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.GlobalPatternMode.TabIndex = 27;
+			this.GlobalPatternMode.SelectedIndexChanged += new System.EventHandler(this.GlobalPatternMode_SelectedIndexChanged);
 			// 
 			// label1
 			// 
@@ -491,6 +493,7 @@
 			this.BacklightsPatternMode.Name = "BacklightsPatternMode";
 			this.BacklightsPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.BacklightsPatternMode.TabIndex = 35;
+			this.BacklightsPatternMode.SelectedIndexChanged += new System.EventHandler(this.BacklightsPatternMode_SelectedIndexChanged);
 			// 
 			// BoothlightsPatternMode
 			// 
@@ -509,6 +512,7 @@
 			this.BoothlightsPatternMode.Name = "BoothlightsPatternMode";
 			this.BoothlightsPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.BoothlightsPatternMode.TabIndex = 36;
+			this.BoothlightsPatternMode.SelectedIndexChanged += new System.EventHandler(this.BoothlightsPatternMode_SelectedIndexChanged);
 			// 
 			// ToplightsPatternMode
 			// 
@@ -531,6 +535,7 @@
 			this.ToplightsPatternMode.Name = "ToplightsPatternMode";
 			this.ToplightsPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.ToplightsPatternMode.TabIndex = 37;
+			this.ToplightsPatternMode.SelectedIndexChanged += new System.EventHandler(this.ToplightsPatternMode_SelectedIndexChanged);
 			// 
 			// LeftlightsPatternMode
 			// 
@@ -551,6 +556,7 @@
 			this.LeftlightsPatternMode.Name = "LeftlightsPatternMode";
 			this.LeftlightsPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.LeftlightsPatternMode.TabIndex = 38;
+			this.LeftlightsPatternMode.SelectedIndexChanged += new System.EventHandler(this.LeftlightsPatternMode_SelectedIndexChanged);
 			// 
 			// RightlightsPatternMode
 			// 
@@ -571,6 +577,7 @@
 			this.RightlightsPatternMode.Name = "RightlightsPatternMode";
 			this.RightlightsPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.RightlightsPatternMode.TabIndex = 39;
+			this.RightlightsPatternMode.SelectedIndexChanged += new System.EventHandler(this.RightlightsPatternMode_SelectedIndexChanged);
 			// 
 			// StrobeButton
 			// 
@@ -628,8 +635,8 @@
 			// 
 			this.openSceneControllerToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
 			this.openSceneControllerToolStripMenuItem.Name = "openSceneControllerToolStripMenuItem";
-			this.openSceneControllerToolStripMenuItem.Size = new System.Drawing.Size(374, 41);
-			this.openSceneControllerToolStripMenuItem.Text = "Open Scene Controller (WIP)";
+			this.openSceneControllerToolStripMenuItem.Size = new System.Drawing.Size(304, 41);
+			this.openSceneControllerToolStripMenuItem.Text = "Open Scene Controller";
 			this.openSceneControllerToolStripMenuItem.Click += new System.EventHandler(this.openSceneControllerToolStripMenuItem_Click);
 			// 
 			// LasersToggleButton

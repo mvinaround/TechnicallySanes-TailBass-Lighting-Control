@@ -41,11 +41,11 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.listBox1 = new System.Windows.Forms.ListBox();
-			this.DisplayOnClickToggle = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.SaveCurrentSceneButton = new System.Windows.Forms.Button();
+			this.SceneNameTextbox = new System.Windows.Forms.TextBox();
+			this.SceneListView = new System.Windows.Forms.ListView();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.statusStrip1.SuspendLayout();
 			this.ShowFileLoaderPanel.SuspendLayout();
 			this.SuspendLayout();
@@ -81,7 +81,7 @@
             this.ShowFileStatus});
 			this.statusStrip1.Location = new System.Drawing.Point(0, 991);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(2209, 42);
+			this.statusStrip1.Size = new System.Drawing.Size(1197, 42);
 			this.statusStrip1.TabIndex = 2;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -132,9 +132,9 @@
 			this.ShowFileLoaderPanel.Controls.Add(this.label2);
 			this.ShowFileLoaderPanel.Controls.Add(this.CreateShowFile);
 			this.ShowFileLoaderPanel.Controls.Add(this.SelectShowFile);
-			this.ShowFileLoaderPanel.Location = new System.Drawing.Point(92, 286);
+			this.ShowFileLoaderPanel.Location = new System.Drawing.Point(620, 72);
 			this.ShowFileLoaderPanel.Name = "ShowFileLoaderPanel";
-			this.ShowFileLoaderPanel.Size = new System.Drawing.Size(414, 381);
+			this.ShowFileLoaderPanel.Size = new System.Drawing.Size(544, 379);
 			this.ShowFileLoaderPanel.TabIndex = 4;
 			// 
 			// label4
@@ -166,82 +166,81 @@
 			this.label2.Text = "Locate Show File...";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// listBox1
+			// SaveCurrentSceneButton
 			// 
-			this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.listBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.listBox1.ForeColor = System.Drawing.Color.White;
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.ItemHeight = 45;
-			this.listBox1.Location = new System.Drawing.Point(12, 72);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(591, 904);
-			this.listBox1.TabIndex = 5;
+			this.SaveCurrentSceneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.SaveCurrentSceneButton.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.SaveCurrentSceneButton.Location = new System.Drawing.Point(620, 177);
+			this.SaveCurrentSceneButton.Name = "SaveCurrentSceneButton";
+			this.SaveCurrentSceneButton.Size = new System.Drawing.Size(544, 70);
+			this.SaveCurrentSceneButton.TabIndex = 9;
+			this.SaveCurrentSceneButton.Text = "Save Current Scene";
+			this.SaveCurrentSceneButton.UseVisualStyleBackColor = true;
+			this.SaveCurrentSceneButton.Click += new System.EventHandler(this.SaveCurrentSceneButton_Click);
 			// 
-			// DisplayOnClickToggle
+			// SceneNameTextbox
 			// 
-			this.DisplayOnClickToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.DisplayOnClickToggle.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.DisplayOnClickToggle.ForeColor = System.Drawing.Color.Red;
-			this.DisplayOnClickToggle.Location = new System.Drawing.Point(609, 830);
-			this.DisplayOnClickToggle.Name = "DisplayOnClickToggle";
-			this.DisplayOnClickToggle.Size = new System.Drawing.Size(544, 70);
-			this.DisplayOnClickToggle.TabIndex = 6;
-			this.DisplayOnClickToggle.Text = "Output On Click - Disabled";
-			this.DisplayOnClickToggle.UseVisualStyleBackColor = true;
-			this.DisplayOnClickToggle.Click += new System.EventHandler(this.button1_Click);
+			this.SceneNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.SceneNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.SceneNameTextbox.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.SceneNameTextbox.ForeColor = System.Drawing.Color.White;
+			this.SceneNameTextbox.Location = new System.Drawing.Point(620, 114);
+			this.SceneNameTextbox.Name = "SceneNameTextbox";
+			this.SceneNameTextbox.Size = new System.Drawing.Size(544, 57);
+			this.SceneNameTextbox.TabIndex = 11;
 			// 
-			// button1
+			// SceneListView
 			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.button1.Location = new System.Drawing.Point(609, 906);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(544, 70);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "Output To Lights";
-			this.button1.UseVisualStyleBackColor = true;
+			this.SceneListView.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.SceneListView.Location = new System.Drawing.Point(22, 72);
+			this.SceneListView.MultiSelect = false;
+			this.SceneListView.Name = "SceneListView";
+			this.SceneListView.Size = new System.Drawing.Size(581, 904);
+			this.SceneListView.TabIndex = 12;
+			this.SceneListView.UseCompatibleStateImageBehavior = false;
+			this.SceneListView.View = System.Windows.Forms.View.List;
+			this.SceneListView.ItemActivate += new System.EventHandler(this.SceneListView_ItemActivate);
 			// 
-			// button2
+			// label7
 			// 
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.button2.Location = new System.Drawing.Point(609, 72);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(544, 70);
-			this.button2.TabIndex = 9;
-			this.button2.Text = "Save Current Scene";
-			this.button2.UseVisualStyleBackColor = true;
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label7.ForeColor = System.Drawing.Color.White;
+			this.label7.Location = new System.Drawing.Point(620, 262);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(428, 78);
+			this.label7.TabIndex = 70;
+			this.label7.Text = "<--\r\nDouble Click to Output to lights!";
 			// 
-			// checkBox1
+			// label5
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.checkBox1.Location = new System.Drawing.Point(609, 148);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(498, 63);
-			this.checkBox1.TabIndex = 10;
-			this.checkBox1.Text = "Include Enabled Lights?";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label5.ForeColor = System.Drawing.Color.White;
+			this.label5.Location = new System.Drawing.Point(620, 72);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(185, 39);
+			this.label5.TabIndex = 71;
+			this.label5.Text = "Scene Name:";
 			// 
 			// SceneController
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
-			this.ClientSize = new System.Drawing.Size(2209, 1033);
+			this.ClientSize = new System.Drawing.Size(1197, 1033);
 			this.Controls.Add(this.ShowFileLoaderPanel);
-			this.Controls.Add(this.checkBox1);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.DisplayOnClickToggle);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.label7);
+			this.Controls.Add(this.SceneNameTextbox);
+			this.Controls.Add(this.SaveCurrentSceneButton);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.label1);
+			this.Controls.Add(this.SceneListView);
 			this.ForeColor = System.Drawing.Color.White;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "SceneController";
-			this.Text = "Scene Controls";
+			this.Text = "Scene Controller";
 			this.Load += new System.EventHandler(this.SceneController_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
@@ -265,10 +264,10 @@
 		private Label label3;
 		private Label label2;
 		private ToolStripStatusLabel ShowFileStatus;
-		private ListBox listBox1;
-		private Button DisplayOnClickToggle;
-		private Button button1;
-		private Button button2;
-		private CheckBox checkBox1;
+		private Button SaveCurrentSceneButton;
+		private TextBox SceneNameTextbox;
+		private ListView SceneListView;
+		private Label label7;
+		private Label label5;
 	}
 }
