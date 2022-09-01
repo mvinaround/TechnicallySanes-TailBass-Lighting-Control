@@ -17,6 +17,10 @@
 
 Software Developed by TechnicallySane</Description>
     <PackageIcon></PackageIcon>
+    <PackageProjectUrl>https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control</RepositoryUrl>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

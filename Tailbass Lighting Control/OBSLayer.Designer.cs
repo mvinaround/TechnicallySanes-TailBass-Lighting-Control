@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OBSLayer));
 			this.RearLeftPixel = new System.Windows.Forms.PictureBox();
 			this.RearRightPixel = new System.Windows.Forms.PictureBox();
 			this.LaserLeftPixel = new System.Windows.Forms.PictureBox();
@@ -218,9 +219,11 @@
 			this.Controls.Add(this.LaserLeftPixel);
 			this.Controls.Add(this.RearRightPixel);
 			this.Controls.Add(this.RearLeftPixel);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximumSize = new System.Drawing.Size(1946, 1151);
 			this.MinimumSize = new System.Drawing.Size(1946, 1151);
 			this.Name = "OBSLayer";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "OBSLayer";
 			this.Load += new System.EventHandler(this.OBSLayer_Load);
 			((System.ComponentModel.ISupportInitialize)(this.RearLeftPixel)).EndInit();

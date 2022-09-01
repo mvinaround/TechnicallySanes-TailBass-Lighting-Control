@@ -17,3 +17,4 @@ F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\R
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\win-x64\Tailbass Lighting Control.pdb
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\win-x64\Tailbass Lighting Control.genruntimeconfig.cache
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\win-x64\ref\Tailbass Lighting Control.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\win-x64\Tailbass_Lighting_Control.SceneController.resources

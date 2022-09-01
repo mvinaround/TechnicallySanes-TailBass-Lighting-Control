@@ -33,6 +33,14 @@ namespace Tailbass_Lighting_Control
 		public static bool RightlightsToggle = false;
 		public static bool BoothlightsToggle = false;
 
+		//IIS Toggles (Included In Strobe)
+		public static bool LasersIIS = true;
+		public static bool BacklightsIIS = true;
+		public static bool ToplightsIIS = true;
+		public static bool LeftlightsIIS = true;
+		public static bool RightlightsIIS = true;
+		public static bool BoothlightsIIS = true;
+
 		//Colour Vars
 		public static string LasersColour1 = "000000000";
 		public static string LasersColour2 = "000000000";
@@ -112,6 +120,7 @@ namespace Tailbass_Lighting_Control
 			{
 				BPMStopwatchActive = false;
 				BPMLabel.Text = BPMReadable.ToString();
+				BPMSetVal.Value = Convert.ToInt32(BPMReadable);
 				BPMTimer.Interval = Convert.ToInt32(BPMTimeInMS);
 				PatternEngineBPM.Interval = Convert.ToInt32(BPMTimeInMS);
 
@@ -156,42 +165,6 @@ namespace Tailbass_Lighting_Control
 			BPMTimer.Start();
 			PatternEngineBPM.Start();
 			StrobeClock.Start();
-		}
-
-		private void ToggleLasers_CheckedChanged(object sender, EventArgs e)
-		{
-			LasersToggle = ToggleLasers.Checked;
-			PatternEngineBPMPushColours = true;
-		}
-
-		private void ToggleBack_CheckedChanged(object sender, EventArgs e)
-		{
-			BacklightsToggle = ToggleBack.Checked;
-			PatternEngineBPMPushColours = true;
-		}
-
-		private void ToggleTopLights_CheckedChanged(object sender, EventArgs e)
-		{
-			ToplightsToggle = ToggleTopLights.Checked;
-			PatternEngineBPMPushColours = true;
-		}
-
-		private void ToggleLeftLights_CheckedChanged(object sender, EventArgs e)
-		{
-			LeftlightsToggle = ToggleLeftLights.Checked;
-			PatternEngineBPMPushColours = true;
-		}
-
-		private void ToggleRightLights_CheckedChanged(object sender, EventArgs e)
-		{
-			RightlightsToggle = ToggleRightLights.Checked;
-			PatternEngineBPMPushColours = true;
-		}
-
-		private void ToggleBoothLights_CheckedChanged(object sender, EventArgs e)
-		{
-			BoothlightsToggle = ToggleBoothLights.Checked;
-			PatternEngineBPMPushColours = true;
 		}
 
 		private void button15_Click(object sender, EventArgs e)
@@ -952,30 +925,6 @@ namespace Tailbass_Lighting_Control
 			}
 		}
 
-		private void GlobalModeToggle_CheckedChanged(object sender, EventArgs e)
-		{
-			GlobalMode = GlobalModeToggle.Checked;
-			if (!GlobalMode)
-			{
-				BoothLeft = 0;
-				BoothRight = 0;
-				Laser1 = 0;
-				Laser2 = 0;
-				Top1 = 0;
-				Top2 = 0;
-				Top3 = 0;
-				Top4 = 0;
-				Left1 = 0;
-				Left2 = 0;
-				Left3 = 0;
-				Right1 = 0;
-				Right2 = 0;
-				Right3 = 0;
-				Back1 = 0;
-				Back2 = 0;
-				PatternEngineBPMPushColours = true;
-			}
-		}
 
 		private void ToplightsColour1Button_Click(object sender, EventArgs e)
 		{
@@ -1050,40 +999,57 @@ namespace Tailbass_Lighting_Control
 				if (StrobeActive)
 				{
 					StrobeButton.ForeColor = Color.Black;
-					if (BoothlightsIIS.Checked)
+					if (BoothlightsIIS)
 					{
 						BoothLeft = 0;
 						BoothRight = 0;
 					}
-					if (LasersIIS.Checked)
+					if (LasersIIS)
 					{
 						Laser1 = 0;
 						Laser2 = 0;
 					}
-					if (ToplightsIIS.Checked)
+					if (ToplightsIIS)
 					{
 						Top1 = 0;
 						Top2 = 0;
 						Top3 = 0;
 						Top4 = 0;
 					}
-					if (LeftlightsIIS.Checked)
+					if (LeftlightsIIS)
 					{
 						Left1 = 0;
 						Left2 = 0;
 						Left3 = 0;
 					}
-					if (RightlighsIIS.Checked)
+					if (RightlightsIIS)
 					{
 						Right1 = 0;
 						Right2 = 0;
 						Right3 = 0;
 					}
-					if (BacklightsIIS.Checked)
+					if (BacklightsIIS)
 					{
 						Back1 = 0;
 						Back2 = 0;
 					}
+
+					PreviewGrid.Items[0].BackColor = Color.FromArgb(BoothLeft);
+					PreviewGrid.Items[1].BackColor = Color.FromArgb(BoothRight);
+					PreviewGrid.Items[2].BackColor = Color.FromArgb(Laser1);
+					PreviewGrid.Items[3].BackColor = Color.FromArgb(Laser2);
+					PreviewGrid.Items[4].BackColor = Color.FromArgb(Left1);
+					PreviewGrid.Items[5].BackColor = Color.FromArgb(Left2);
+					PreviewGrid.Items[6].BackColor = Color.FromArgb(Left3);
+					PreviewGrid.Items[7].BackColor = Color.FromArgb(Back1);
+					PreviewGrid.Items[8].BackColor = Color.FromArgb(Back2);
+					PreviewGrid.Items[9].BackColor = Color.FromArgb(Right1);
+					PreviewGrid.Items[10].BackColor = Color.FromArgb(Right2);
+					PreviewGrid.Items[11].BackColor = Color.FromArgb(Right3);
+					PreviewGrid.Items[12].BackColor = Color.FromArgb(Top1);
+					PreviewGrid.Items[13].BackColor = Color.FromArgb(Top2);
+					PreviewGrid.Items[14].BackColor = Color.FromArgb(Top3);
+					PreviewGrid.Items[15].BackColor = Color.FromArgb(Top4);
 				}
 			}
 			else
@@ -1106,6 +1072,23 @@ namespace Tailbass_Lighting_Control
 				Right3 = OldRight3;
 				Back1 = OldBack1;
 				Back2 = OldBack2;
+
+				PreviewGrid.Items[0].BackColor = Color.FromArgb(BoothLeft);
+				PreviewGrid.Items[1].BackColor = Color.FromArgb(BoothRight);
+				PreviewGrid.Items[2].BackColor = Color.FromArgb(Laser1);
+				PreviewGrid.Items[3].BackColor = Color.FromArgb(Laser2);
+				PreviewGrid.Items[4].BackColor = Color.FromArgb(Left1);
+				PreviewGrid.Items[5].BackColor = Color.FromArgb(Left2);
+				PreviewGrid.Items[6].BackColor = Color.FromArgb(Left3);
+				PreviewGrid.Items[7].BackColor = Color.FromArgb(Back1);
+				PreviewGrid.Items[8].BackColor = Color.FromArgb(Back2);
+				PreviewGrid.Items[9].BackColor = Color.FromArgb(Right1);
+				PreviewGrid.Items[10].BackColor = Color.FromArgb(Right2);
+				PreviewGrid.Items[11].BackColor = Color.FromArgb(Right3);
+				PreviewGrid.Items[12].BackColor = Color.FromArgb(Top1);
+				PreviewGrid.Items[13].BackColor = Color.FromArgb(Top2);
+				PreviewGrid.Items[14].BackColor = Color.FromArgb(Top3);
+				PreviewGrid.Items[15].BackColor = Color.FromArgb(Top4);
 
 			}
 		}
@@ -1138,6 +1121,281 @@ namespace Tailbass_Lighting_Control
 			{
 				StrobeActive = false;
 			}
+		}
+
+		private void showOBSLayerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tailbass_Lighting_Control.OBSLayer boop = new Tailbass_Lighting_Control.OBSLayer();
+			boop.Show();
+		}
+
+		private void openSceneControllerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tailbass_Lighting_Control.SceneController boop = new Tailbass_Lighting_Control.SceneController();
+			boop.Show();
+		}
+
+		private void LaserToggleButton_Click(object sender, EventArgs e)
+		{
+			if (LasersToggle)
+			{
+				LasersToggleButton.ForeColor = Color.Red;
+				LasersToggle = false;
+			}
+			else
+			{
+				LasersToggleButton.ForeColor = Color.LimeGreen;
+				LasersToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void BackLightsToggleButton_Click(object sender, EventArgs e)
+		{
+			if (BacklightsToggle)
+			{
+				BackLightsToggleButton.ForeColor = Color.Red;
+				BacklightsToggle = false;
+			}
+			else
+			{
+				BackLightsToggleButton.ForeColor = Color.LimeGreen;
+				BacklightsToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void TopLightsToggleButton_Click(object sender, EventArgs e)
+		{
+			if (ToplightsToggle)
+			{
+				TopLightsToggleButton.ForeColor = Color.Red;
+				ToplightsToggle = false;
+			}
+			else
+			{
+				TopLightsToggleButton.ForeColor = Color.LimeGreen;
+				ToplightsToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void LeftLightsToggleButton_Click(object sender, EventArgs e)
+		{
+			if (LeftlightsToggle)
+			{
+				LeftLightsToggleButton.ForeColor = Color.Red;
+				LeftlightsToggle = false;
+			}
+			else
+			{
+				LeftLightsToggleButton.ForeColor = Color.LimeGreen;
+				LeftlightsToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void RightLightsToggleButton_Click(object sender, EventArgs e)
+		{
+			if (RightlightsToggle)
+			{
+				RightLightsToggleButton.ForeColor = Color.Red;
+				RightlightsToggle = false;
+			}
+			else
+			{
+				RightLightsToggleButton.ForeColor = Color.LimeGreen;
+				RightlightsToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void BoothLightsToggleButton_Click(object sender, EventArgs e)
+		{
+			if (BoothlightsToggle)
+			{
+				BoothLightsToggleButton.ForeColor = Color.Red;
+				BoothlightsToggle = false;
+			}
+			else
+			{
+				BoothLightsToggleButton.ForeColor = Color.LimeGreen;
+				BoothlightsToggle = true;
+			}
+			PatternEngineBPMPushColours = true;
+		}
+
+		private void LasersIISToggle_Click(object sender, EventArgs e)
+		{
+			if (LasersIIS)
+			{
+				LasersIISToggle.ForeColor = Color.Red;
+				LasersIIS = false;
+			}
+			else
+			{
+				LasersIISToggle.ForeColor = Color.LimeGreen;
+				LasersIIS = true;
+			}
+		}
+
+		private void BackLightsIISToggle_Click(object sender, EventArgs e)
+		{
+			if (BacklightsIIS)
+			{
+				BackLightsIISToggle.ForeColor = Color.Red;
+				BacklightsIIS = false;
+			}
+			else
+			{
+				BackLightsIISToggle.ForeColor = Color.LimeGreen;
+				BacklightsIIS = true;
+			}
+		}
+
+		private void TopLightsIISToggle_Click(object sender, EventArgs e)
+		{
+			if (ToplightsIIS)
+			{
+				TopLightsIISToggle.ForeColor = Color.Red;
+				ToplightsIIS = false;
+			}
+			else
+			{
+				TopLightsIISToggle.ForeColor = Color.LimeGreen;
+				ToplightsIIS = true;
+			}
+		}
+
+		private void LeftLightsIISToggle_Click(object sender, EventArgs e)
+		{
+			if (LeftlightsIIS)
+			{
+				LeftLightsIISToggle.ForeColor = Color.Red;
+				LeftlightsIIS = false;
+			}
+			else
+			{
+				LeftLightsIISToggle.ForeColor = Color.LimeGreen;
+				LeftlightsIIS = true;
+			}
+		}
+
+		private void RightLightsIISToggle_Click(object sender, EventArgs e)
+		{
+			if (RightlightsIIS)
+			{
+				RightLightsIISToggle.ForeColor = Color.Red;
+				RightlightsIIS = false;
+			}
+			else
+			{
+				RightLightsIISToggle.ForeColor = Color.LimeGreen;
+				RightlightsIIS = true;
+			}
+		}
+
+		private void BoothLightsIISToggle_Click(object sender, EventArgs e)
+		{
+			if (BoothlightsIIS)
+			{
+				BoothLightsIISToggle.ForeColor = Color.Red;
+				BoothlightsIIS = false;
+			}
+			else
+			{
+				BoothLightsIISToggle.ForeColor = Color.LimeGreen;
+				BoothlightsIIS = true;
+			}
+		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			//GlobalMode Toggle
+			if (GlobalMode)
+			{
+				GlobalModeToggleButton.ForeColor = Color.Red;
+				GlobalModeToggleButton.Text = "Global Mode Off";
+				GlobalMode = false;
+			}
+			else
+			{
+				GlobalModeToggleButton.ForeColor = Color.LimeGreen;
+				GlobalModeToggleButton.Text = "Global Mode On";
+				GlobalMode = true;
+			}
+
+
+			if (!GlobalMode)
+			{
+				BoothLeft = 0;
+				BoothRight = 0;
+				Laser1 = 0;
+				Laser2 = 0;
+				Top1 = 0;
+				Top2 = 0;
+				Top3 = 0;
+				Top4 = 0;
+				Left1 = 0;
+				Left2 = 0;
+				Left3 = 0;
+				Right1 = 0;
+				Right2 = 0;
+				Right3 = 0;
+				Back1 = 0;
+				Back2 = 0;
+				PatternEngineBPMPushColours = true;
+			}
+
+		}
+
+		private void BPMLabel_Click(object sender, EventArgs e)
+		{
+			BPMPanel.Visible = true;
+		}
+
+		private void SetBPMButton_Click(object sender, EventArgs e)
+		{
+			Int32 BPMinMS = 0;
+
+			BPMinMS = (60000 / Convert.ToInt32(BPMSetVal.Value));
+			BPMLabel.Text = BPMSetVal.Value.ToString();
+			BPMTimer.Interval = BPMinMS;
+			PatternEngineBPM.Interval = BPMinMS;
+		}
+
+		private void BPMDouble_Click(object sender, EventArgs e)
+		{
+			Int32 BPMinMS = 0;
+			Int32 Doubley = (2 * Convert.ToInt32(BPMSetVal.Value)); 
+
+			if(Doubley > 1000)
+			{
+				Doubley = 1000;
+			}
+
+			BPMinMS = (60000 / Doubley);
+			BPMSetVal.Value = Doubley;
+			BPMLabel.Text = Doubley.ToString();
+			BPMTimer.Interval = BPMinMS;
+			PatternEngineBPM.Interval = BPMinMS;
+		}
+
+		private void BPMHalf_Click(object sender, EventArgs e)
+		{
+			Int32 BPMinMS = 0;
+			Int32 Halfey = (Convert.ToInt32(BPMSetVal.Value) / 2);
+
+			if (Halfey < 1)
+			{
+				Halfey = 1;
+			}
+
+			BPMinMS = (60000 / Halfey);
+			BPMSetVal.Value = Halfey;
+			BPMLabel.Text = Halfey.ToString();
+			BPMTimer.Interval = BPMinMS;
+			PatternEngineBPM.Interval = BPMinMS;
 		}
 	}
 }

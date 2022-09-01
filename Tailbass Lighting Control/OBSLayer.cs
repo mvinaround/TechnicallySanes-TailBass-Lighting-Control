@@ -19,6 +19,7 @@ namespace Tailbass_Lighting_Control
 
 		private void timer1_Tick(object sender, EventArgs e)
 		{
+			Refresh();
 			RearLeftPixel.BackColor = Color.FromArgb(MainUI.Back1);
 			RearRightPixel.BackColor = Color.FromArgb(MainUI.Back2);
 
