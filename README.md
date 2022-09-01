@@ -1,4 +1,4 @@
-
+![logo](https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/blob/master/logo.jpg?raw=true)
 # TechnicallySane's TailBass Lighting Control
 
 A Small application written in C# to generate a capturable window for OBS that can control the lighting in the TailBass world in VRChat (https://vrchat.com/home/world/wrld_7327b9c5-cd6c-45e3-a7d2-e1ff704fd603)
