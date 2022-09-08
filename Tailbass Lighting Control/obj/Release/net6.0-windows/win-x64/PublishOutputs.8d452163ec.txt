@@ -1,0 +1,7 @@
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\Tailbass Lighting Control.pdb
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\D3DCompiler_47_cor3.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\PenImc_cor3.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\PresentationNative_cor3.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\vcruntime140_cor3.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\wpfgfx_cor3.dll
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\publish\Tailbass Lighting Control.exe

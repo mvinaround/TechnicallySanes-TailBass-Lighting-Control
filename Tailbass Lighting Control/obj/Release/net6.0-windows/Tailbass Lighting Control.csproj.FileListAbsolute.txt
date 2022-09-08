@@ -7,6 +7,7 @@ F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\R
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass_Lighting_Control.MainUI.resources
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass_Lighting_Control.OBSLayer.resources
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass_Lighting_Control.Properties.Resources.resources
+F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass_Lighting_Control.SceneController.resources
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass Lighting Control.csproj.GenerateResource.cache
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass Lighting Control.GeneratedMSBuildEditorConfig.editorconfig
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass Lighting Control.AssemblyInfoInputs.cache
@@ -17,4 +18,3 @@ F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\R
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass Lighting Control.pdb
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass Lighting Control.genruntimeconfig.cache
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\ref\Tailbass Lighting Control.dll
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows\Tailbass_Lighting_Control.SceneController.resources

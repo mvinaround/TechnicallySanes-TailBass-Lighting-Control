@@ -61,6 +61,16 @@ namespace Tailbass_Lighting_Control.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon favicon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (1)", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap TailBass_Caveworld_template {
