@@ -5,9 +5,9 @@ A Small application written in C# to generate a capturable window for OBS that c
 
 ## Installation/Use
 
-Download and run the .exe
+Download the zip, extract to a folder and run the Tailbass Lighting Control.exe
 
-https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/blob/master/Tailbass%20Lighting%20Control/Compiled/Technically%20Sane's%20Tailbass%20Lighting%20Control.exe
+https://github.com/mvinaround/TechnicallySanes-TailBass-Lighting-Control/raw/master/Tailbass%20Lighting%20Control/Compiled/TailbassLightingControl-Release.zip
 
 
 Or compile and run yourself. The Compiled link above is for people just wanting to use the software ^_^
