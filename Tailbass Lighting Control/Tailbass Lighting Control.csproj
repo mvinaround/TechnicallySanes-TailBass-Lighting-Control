@@ -7,8 +7,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>True</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>False</UseWPF>
-    <StartupObject>Tailbass_Lighting_Control.Program</StartupObject>
+    <UseWPF>True</UseWPF>
+	<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+	<StartupObject>Tailbass_Lighting_Control.Program</StartupObject>
     <PackageId>TechSanesTailbassLightingControl</PackageId>
     <Authors>TechnicallySane</Authors>
     <Product>TechSanesTailbassLightingControl</Product>
@@ -23,6 +24,7 @@ Software Developed by TechnicallySane</Description>
     <PlatformTarget>x64</PlatformTarget>
     <ApplicationIcon>favicon (1).ico</ApplicationIcon>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <Configurations>Debug;Release;fuck</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
