@@ -46,6 +46,7 @@
 			this.SceneListView = new System.Windows.Forms.ListView();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
+			this.DeleteScene = new System.Windows.Forms.Button();
 			this.statusStrip1.SuspendLayout();
 			this.ShowFileLoaderPanel.SuspendLayout();
 			this.SuspendLayout();
@@ -223,12 +224,25 @@
 			this.label5.TabIndex = 71;
 			this.label5.Text = "Scene Name:";
 			// 
+			// DeleteScene
+			// 
+			this.DeleteScene.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.DeleteScene.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.DeleteScene.Location = new System.Drawing.Point(609, 906);
+			this.DeleteScene.Name = "DeleteScene";
+			this.DeleteScene.Size = new System.Drawing.Size(576, 70);
+			this.DeleteScene.TabIndex = 72;
+			this.DeleteScene.Text = "Delete Scene";
+			this.DeleteScene.UseVisualStyleBackColor = true;
+			this.DeleteScene.Click += new System.EventHandler(this.DeleteScene_Click);
+			// 
 			// SceneController
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
 			this.ClientSize = new System.Drawing.Size(1197, 1033);
+			this.Controls.Add(this.DeleteScene);
 			this.Controls.Add(this.ShowFileLoaderPanel);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label7);
@@ -269,5 +283,6 @@
 		private ListView SceneListView;
 		private Label label7;
 		private Label label5;
+		private Button DeleteScene;
 	}
 }

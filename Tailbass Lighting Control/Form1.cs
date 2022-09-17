@@ -1558,5 +1558,11 @@ namespace Tailbass_Lighting_Control
 		{
 			BoothLightsPattern = BoothlightsPatternMode.SelectedIndex;	
 		}
+
+		private void toolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			Tailbass_Lighting_Control.Settings arf = new Tailbass_Lighting_Control.Settings();
+			arf.Show();
+		}
 	}
 }

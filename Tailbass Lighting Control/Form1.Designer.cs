@@ -94,10 +94,10 @@
 			this.RightlightsPatternMode = new System.Windows.Forms.ComboBox();
 			this.StrobeButton = new System.Windows.Forms.Button();
 			this.StrobeClock = new System.Windows.Forms.Timer(this.components);
-			this.label5 = new System.Windows.Forms.Label();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.showOBSLayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.openSceneControllerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.LasersToggleButton = new System.Windows.Forms.Button();
 			this.BackLightsToggleButton = new System.Windows.Forms.Button();
 			this.TopLightsToggleButton = new System.Windows.Forms.Button();
@@ -122,9 +122,13 @@
 			this.BPMDouble = new System.Windows.Forms.Button();
 			this.BPMSetVal = new System.Windows.Forms.NumericUpDown();
 			this.label8 = new System.Windows.Forms.Label();
+			this.Branding2 = new System.Windows.Forms.PictureBox();
+			this.LogoBox = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
 			this.BPMPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.BPMSetVal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.Branding2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// BPMTapButton
@@ -132,7 +136,7 @@
 			this.BPMTapButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.BPMTapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BPMTapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.BPMTapButton.Location = new System.Drawing.Point(12, 997);
+			this.BPMTapButton.Location = new System.Drawing.Point(12, 1042);
 			this.BPMTapButton.Name = "BPMTapButton";
 			this.BPMTapButton.Size = new System.Drawing.Size(200, 200);
 			this.BPMTapButton.TabIndex = 0;
@@ -146,7 +150,7 @@
 			this.BPMLabel.BackColor = System.Drawing.Color.Gray;
 			this.BPMLabel.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.BPMLabel.ForeColor = System.Drawing.Color.White;
-			this.BPMLabel.Location = new System.Drawing.Point(12, 934);
+			this.BPMLabel.Location = new System.Drawing.Point(12, 979);
 			this.BPMLabel.Name = "BPMLabel";
 			this.BPMLabel.Size = new System.Drawing.Size(200, 60);
 			this.BPMLabel.TabIndex = 1;
@@ -238,7 +242,7 @@
 			this.PreviewGrid.Scrollable = false;
 			this.PreviewGrid.ShowGroups = false;
 			this.PreviewGrid.ShowItemToolTips = true;
-			this.PreviewGrid.Size = new System.Drawing.Size(613, 1161);
+			this.PreviewGrid.Size = new System.Drawing.Size(613, 1206);
 			this.PreviewGrid.Sorting = System.Windows.Forms.SortOrder.Ascending;
 			this.PreviewGrid.TabIndex = 2;
 			this.PreviewGrid.TileSize = new System.Drawing.Size(300, 100);
@@ -401,7 +405,7 @@
 			this.GlobalColour2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.GlobalColour2Button.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.GlobalColour2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.GlobalColour2Button.Location = new System.Drawing.Point(1377, 154);
+			this.GlobalColour2Button.Location = new System.Drawing.Point(1377, 313);
 			this.GlobalColour2Button.Name = "GlobalColour2Button";
 			this.GlobalColour2Button.Size = new System.Drawing.Size(177, 70);
 			this.GlobalColour2Button.TabIndex = 24;
@@ -441,7 +445,7 @@
             "Static Split",
             "Alternating",
             "Alternating Split"});
-			this.GlobalPatternMode.Location = new System.Drawing.Point(646, 161);
+			this.GlobalPatternMode.Location = new System.Drawing.Point(646, 320);
 			this.GlobalPatternMode.Name = "GlobalPatternMode";
 			this.GlobalPatternMode.Size = new System.Drawing.Size(542, 58);
 			this.GlobalPatternMode.TabIndex = 27;
@@ -452,7 +456,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI Black", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.label1.Location = new System.Drawing.Point(356, 164);
+			this.label1.Location = new System.Drawing.Point(356, 323);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(284, 50);
 			this.label1.TabIndex = 28;
@@ -463,7 +467,7 @@
 			this.GlobalColour1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.GlobalColour1Button.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.GlobalColour1Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.GlobalColour1Button.Location = new System.Drawing.Point(1194, 154);
+			this.GlobalColour1Button.Location = new System.Drawing.Point(1194, 313);
 			this.GlobalColour1Button.Name = "GlobalColour1Button";
 			this.GlobalColour1Button.Size = new System.Drawing.Size(177, 70);
 			this.GlobalColour1Button.TabIndex = 30;
@@ -585,7 +589,7 @@
 			this.StrobeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.StrobeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.StrobeButton.ForeColor = System.Drawing.Color.White;
-			this.StrobeButton.Location = new System.Drawing.Point(1233, 997);
+			this.StrobeButton.Location = new System.Drawing.Point(1233, 1042);
 			this.StrobeButton.Name = "StrobeButton";
 			this.StrobeButton.Size = new System.Drawing.Size(327, 200);
 			this.StrobeButton.TabIndex = 46;
@@ -599,16 +603,6 @@
 			this.StrobeClock.Interval = 60;
 			this.StrobeClock.Tick += new System.EventHandler(this.StrobeClock_Tick);
 			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.label5.Location = new System.Drawing.Point(17, 48);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(755, 60);
-			this.label5.TabIndex = 50;
-			this.label5.Text = "TechSane\'s TailBass Lighting Control ";
-			// 
 			// menuStrip1
 			// 
 			this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -616,7 +610,8 @@
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showOBSLayerToolStripMenuItem,
-            this.openSceneControllerToolStripMenuItem});
+            this.openSceneControllerToolStripMenuItem,
+            this.toolStripMenuItem1});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(2184, 45);
@@ -638,6 +633,14 @@
 			this.openSceneControllerToolStripMenuItem.Size = new System.Drawing.Size(304, 41);
 			this.openSceneControllerToolStripMenuItem.Text = "Open Scene Controller";
 			this.openSceneControllerToolStripMenuItem.Click += new System.EventHandler(this.openSceneControllerToolStripMenuItem_Click);
+			// 
+			// toolStripMenuItem1
+			// 
+			this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Gainsboro;
+			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 41);
+			this.toolStripMenuItem1.Text = "Settings";
+			this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
 			// 
 			// LasersToggleButton
 			// 
@@ -840,7 +843,7 @@
 			this.GlobalModeToggleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.GlobalModeToggleButton.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.GlobalModeToggleButton.ForeColor = System.Drawing.Color.Red;
-			this.GlobalModeToggleButton.Location = new System.Drawing.Point(17, 154);
+			this.GlobalModeToggleButton.Location = new System.Drawing.Point(17, 313);
 			this.GlobalModeToggleButton.Name = "GlobalModeToggleButton";
 			this.GlobalModeToggleButton.Size = new System.Drawing.Size(333, 70);
 			this.GlobalModeToggleButton.TabIndex = 68;
@@ -853,7 +856,7 @@
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.label7.Location = new System.Drawing.Point(17, 112);
+			this.label7.Location = new System.Drawing.Point(17, 271);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(596, 39);
 			this.label7.TabIndex = 69;
@@ -879,7 +882,7 @@
 			this.BPMPanel.Controls.Add(this.BPMDouble);
 			this.BPMPanel.Controls.Add(this.BPMSetVal);
 			this.BPMPanel.Controls.Add(this.SetBPMButton);
-			this.BPMPanel.Location = new System.Drawing.Point(224, 997);
+			this.BPMPanel.Location = new System.Drawing.Point(224, 1042);
 			this.BPMPanel.Name = "BPMPanel";
 			this.BPMPanel.Size = new System.Drawing.Size(438, 200);
 			this.BPMPanel.TabIndex = 71;
@@ -939,18 +942,39 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
 			this.label8.ForeColor = System.Drawing.Color.Gray;
-			this.label8.Location = new System.Drawing.Point(218, 948);
+			this.label8.Location = new System.Drawing.Point(218, 993);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(393, 32);
 			this.label8.TabIndex = 72;
 			this.label8.Text = "<-- Click for more BPM settings ^_^";
+			// 
+			// Branding2
+			// 
+			this.Branding2.BackgroundImage = global::Tailbass_Lighting_Control.Properties.Resources.TailbassBottomLogo;
+			this.Branding2.InitialImage = null;
+			this.Branding2.Location = new System.Drawing.Point(668, 1042);
+			this.Branding2.Name = "Branding2";
+			this.Branding2.Size = new System.Drawing.Size(560, 200);
+			this.Branding2.TabIndex = 73;
+			this.Branding2.TabStop = false;
+			// 
+			// LogoBox
+			// 
+			this.LogoBox.BackgroundImage = global::Tailbass_Lighting_Control.Properties.Resources.BannerMain;
+			this.LogoBox.Location = new System.Drawing.Point(0, 48);
+			this.LogoBox.Name = "LogoBox";
+			this.LogoBox.Size = new System.Drawing.Size(1567, 223);
+			this.LogoBox.TabIndex = 74;
+			this.LogoBox.TabStop = false;
 			// 
 			// MainUI
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
-			this.ClientSize = new System.Drawing.Size(2184, 1206);
+			this.ClientSize = new System.Drawing.Size(2184, 1251);
+			this.Controls.Add(this.LogoBox);
+			this.Controls.Add(this.Branding2);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.BPMPanel);
 			this.Controls.Add(this.label7);
@@ -971,7 +995,6 @@
 			this.Controls.Add(this.TopLightsToggleButton);
 			this.Controls.Add(this.BackLightsToggleButton);
 			this.Controls.Add(this.LasersToggleButton);
-			this.Controls.Add(this.label5);
 			this.Controls.Add(this.StrobeButton);
 			this.Controls.Add(this.RightlightsPatternMode);
 			this.Controls.Add(this.LeftlightsPatternMode);
@@ -1012,6 +1035,8 @@
 			this.menuStrip1.PerformLayout();
 			this.BPMPanel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.BPMSetVal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Branding2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.LogoBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1051,7 +1076,6 @@
 		private ComboBox RightlightsPatternMode;
 		private Button StrobeButton;
 		private System.Windows.Forms.Timer StrobeClock;
-		private Label label5;
 		private MenuStrip menuStrip1;
 		private ToolStripMenuItem openSceneControllerToolStripMenuItem;
 		private ToolStripMenuItem showOBSLayerToolStripMenuItem;
@@ -1079,5 +1103,8 @@
 		private Button BPMHalf;
 		private Button BPMDouble;
 		private Label label8;
+		private ToolStripMenuItem toolStripMenuItem1;
+		private PictureBox Branding2;
+		private PictureBox LogoBox;
 	}
 }

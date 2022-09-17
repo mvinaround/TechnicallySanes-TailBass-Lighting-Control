@@ -33,9 +33,13 @@ namespace Tailbass_Lighting_Control
 
 		private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
 		{
-			if(openFileDialog1.FileName.Length > 0)
+			if (openFileDialog1.FileName.Length > 0)
 			{
 				ShowFile = openFileDialog1.FileName.ToString();
+				Properties.Settings.Default.PreviousShowFile = ShowFile;
+				Properties.Settings.Default.Save();
+
+
 				UpdateText.Text = "Show File Loaded!";
 				ShowFileStatus.Text = "Show File: " + ShowFile;
 
@@ -74,6 +78,46 @@ namespace Tailbass_Lighting_Control
 			}
 		}
 
+		private void LoadShowFile()
+		{
+			//Uh Reload the file!
+			SceneListView.Items.Clear();
+			if (ShowFile.Length > 0)
+			{
+				int linecount = 0;
+				foreach (string line in System.IO.File.ReadLines(ShowFile))
+				{
+					linecount++;
+					if (line.Split(",").First() == "[Scene]")
+					{
+						string[] parts = line.Split(",");
+
+						ListViewItem lvi = new ListViewItem(parts[2]);
+						lvi.SubItems.Add(parts[1]);
+						int fuckmeaddallthetings = 3;
+
+						while (fuckmeaddallthetings < 31)
+						{
+							lvi.SubItems.Add(parts[fuckmeaddallthetings]);
+							fuckmeaddallthetings++;
+						}
+
+						SceneListView.Items.Add(lvi);
+
+
+					}
+					else
+					{
+						//Do nothing. For now!
+					}
+				}
+			}
+			else
+			{
+				UpdateText.Text = "Show File Not Found!";
+			}
+		}
+
 		private void CreateShowFile_Click(object sender, EventArgs e)
 		{
 			saveFileDialog1.ShowDialog();
@@ -85,9 +129,9 @@ namespace Tailbass_Lighting_Control
 			{
 				ShowFile = saveFileDialog1.FileName.ToString();
 
-				using(StreamWriter fs = File.CreateText(saveFileDialog1.FileName))
+				using (StreamWriter fs = File.CreateText(saveFileDialog1.FileName))
 				{
-					fs.WriteLine("TailBass Lighting Control Scenes File! OwO \n");
+					fs.WriteLine("TailBass Lighting Control Config! OwO \n");
 				}
 
 				ShowFileLoaderPanel.Visible = false;
@@ -100,7 +144,14 @@ namespace Tailbass_Lighting_Control
 
 		private void SceneController_Load(object sender, EventArgs e)
 		{
+			if (Properties.Settings.Default.AutoLoadPreviousShowFile)
+			{
+				ShowFile = Properties.Settings.Default.PreviousShowFile;
+				ShowFileStatus.Text = "Show File: " + ShowFile;
+				ShowFileLoaderPanel.Hide();
+				LoadShowFile();	
 
+			}
 		}
 
 		private void SaveCurrentSceneButton_Click(object sender, EventArgs e)
@@ -132,7 +183,7 @@ namespace Tailbass_Lighting_Control
 			sb.Append("[Scene],");
 			sb.Append(UID);
 			sb.Append(",");
-			if(SceneNameTextbox.Text.Length > 0)
+			if (SceneNameTextbox.Text.Length > 0)
 			{
 				sb.Append(SceneNameTextbox.Text);
 				SceneNameTextbox.Clear();
@@ -215,44 +266,10 @@ namespace Tailbass_Lighting_Control
 
 			Debug.WriteLine("File Written!");
 			Debug.WriteLine("Reloading File!");
-			//LoadShowFile(); 
-
-			//Uh Reload the file!
-			SceneListView.Items.Clear();
-
-			int linecount = 0;
-			foreach (string line in System.IO.File.ReadLines(ShowFile))
-			{
-				linecount++;
-				if (line.Split(",").First() == "[Scene]")
-				{
-					string[] parts = line.Split(",");
-
-					ListViewItem lvi = new ListViewItem(parts[2]);
-					lvi.SubItems.Add(parts[1]);
-					int fuckmeaddallthetings = 3;
-
-					while(fuckmeaddallthetings < 31)
-					{
-						lvi.SubItems.Add(parts[fuckmeaddallthetings]);
-						fuckmeaddallthetings++;
-					}
-
-					SceneListView.Items.Add(lvi);
-
-
-				}
-				else
-				{
-					//Do nothing. For now!
-				}
-			}
-		}
-
-		public static bool LoadShowFile()
-		{
 			
-			return true;
+			LoadShowFile();
+
+			
 		}
 
 		private void SceneListView_ItemActivate(object sender, EventArgs e)
@@ -298,6 +315,46 @@ namespace Tailbass_Lighting_Control
 			MainUI.RefreshColoursFromRAM = true;
 		}
 
-		
+		private void DeleteScene_Click(object sender, EventArgs e)
+		{
+			if (SceneListView.SelectedItems.Count > 0)
+			{
+				string SceneToDelete = SceneListView.SelectedItems[0].SubItems[1].Text;
+				Debug.WriteLine("Scene ID to Delete:" + SceneToDelete);
+				int linecount = 0;
+
+				//Create a String Builder:
+				StringBuilder sb = new StringBuilder();
+
+				//Read each line to string builder, if line to delete, do not write into string builder.
+
+				foreach (string line in System.IO.File.ReadLines(ShowFile))
+				{
+					
+					if (!line.Contains(SceneToDelete))
+					{
+						sb.Append(line);
+						sb.Append("\n");
+
+					}
+					else
+					{
+						Debug.WriteLine("Scene Deleted: " + SceneToDelete);
+						UpdateText.Text = "Scene Deleted: " + SceneToDelete;
+					}
+					linecount++;
+
+				}
+				File.WriteAllText(ShowFile, sb.ToString());
+
+				//Reload show file
+				LoadShowFile();
+			}
+			else
+			{
+				Debug.WriteLine("No Scene Selected.");
+			}
+	
+		}
 	}
 }

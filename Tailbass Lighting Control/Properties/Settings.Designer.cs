@@ -22,5 +22,53 @@ namespace Tailbass_Lighting_Control.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("128")]
+        public int DefaultBPM {
+            get {
+                return ((int)(this["DefaultBPM"]));
+            }
+            set {
+                this["DefaultBPM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PreviousShowFile {
+            get {
+                return ((string)(this["PreviousShowFile"]));
+            }
+            set {
+                this["PreviousShowFile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AutoLoadPreviousShowFile {
+            get {
+                return ((bool)(this["AutoLoadPreviousShowFile"]));
+            }
+            set {
+                this["AutoLoadPreviousShowFile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ThemeMode {
+            get {
+                return ((string)(this["ThemeMode"]));
+            }
+            set {
+                this["ThemeMode"] = value;
+            }
+        }
     }
 }

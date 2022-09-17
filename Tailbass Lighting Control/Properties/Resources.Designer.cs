@@ -61,6 +61,36 @@ namespace Tailbass_Lighting_Control.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BannerMain {
+            get {
+                object obj = ResourceManager.GetObject("BannerMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap devv {
+            get {
+                object obj = ResourceManager.GetObject("devv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap devv1 {
+            get {
+                object obj = ResourceManager.GetObject("devv1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon favicon__1_ {
@@ -76,6 +106,16 @@ namespace Tailbass_Lighting_Control.Properties {
         internal static System.Drawing.Bitmap TailBass_Caveworld_template {
             get {
                 object obj = ResourceManager.GetObject("TailBass_Caveworld_template", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TailbassBottomLogo {
+            get {
+                object obj = ResourceManager.GetObject("TailbassBottomLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
