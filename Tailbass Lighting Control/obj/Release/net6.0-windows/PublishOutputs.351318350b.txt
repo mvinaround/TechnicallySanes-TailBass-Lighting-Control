@@ -1,5 +1,0 @@
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\Tailbass Lighting Control.exe
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\Tailbass Lighting Control.dll
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\Tailbass Lighting Control.deps.json
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\Tailbass Lighting Control.runtimeconfig.json
-F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\bin\Release\net6.0-windows\publish\Tailbass Lighting Control.pdb

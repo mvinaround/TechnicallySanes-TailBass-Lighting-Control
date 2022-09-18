@@ -133,7 +133,7 @@
 			// 
 			// BPMTapButton
 			// 
-			this.BPMTapButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.BPMTapButton.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.BPMTapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BPMTapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.BPMTapButton.Location = new System.Drawing.Point(12, 1042);
@@ -146,7 +146,7 @@
 			// 
 			// BPMLabel
 			// 
-			this.BPMLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.BPMLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.BPMLabel.BackColor = System.Drawing.Color.Gray;
 			this.BPMLabel.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.BPMLabel.ForeColor = System.Drawing.Color.White;
@@ -247,7 +247,7 @@
 			this.PreviewGrid.TabIndex = 2;
 			this.PreviewGrid.TileSize = new System.Drawing.Size(300, 100);
 			this.PreviewGrid.UseCompatibleStateImageBehavior = false;
-			this.PreviewGrid.View = System.Windows.Forms.View.Tile;
+			this.PreviewGrid.View = System.Windows.Forms.View.List;
 			// 
 			// imageList1
 			// 
@@ -585,7 +585,7 @@
 			// 
 			// StrobeButton
 			// 
-			this.StrobeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.StrobeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.StrobeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.StrobeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.StrobeButton.ForeColor = System.Drawing.Color.White;
@@ -877,6 +877,7 @@
 			// 
 			// BPMPanel
 			// 
+			this.BPMPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.BPMPanel.BackColor = System.Drawing.Color.DimGray;
 			this.BPMPanel.Controls.Add(this.BPMHalf);
 			this.BPMPanel.Controls.Add(this.BPMDouble);
@@ -950,7 +951,9 @@
 			// 
 			// Branding2
 			// 
+			this.Branding2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.Branding2.BackgroundImage = global::Tailbass_Lighting_Control.Properties.Resources.TailbassBottomLogo;
+			this.Branding2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.Branding2.InitialImage = null;
 			this.Branding2.Location = new System.Drawing.Point(668, 1042);
 			this.Branding2.Name = "Branding2";
@@ -961,6 +964,7 @@
 			// LogoBox
 			// 
 			this.LogoBox.BackgroundImage = global::Tailbass_Lighting_Control.Properties.Resources.BannerMain;
+			this.LogoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.LogoBox.Location = new System.Drawing.Point(0, 48);
 			this.LogoBox.Name = "LogoBox";
 			this.LogoBox.Size = new System.Drawing.Size(1567, 223);
@@ -969,8 +973,8 @@
 			// 
 			// MainUI
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.BackColor = System.Drawing.Color.Black;
 			this.ClientSize = new System.Drawing.Size(2184, 1251);
 			this.Controls.Add(this.LogoBox);

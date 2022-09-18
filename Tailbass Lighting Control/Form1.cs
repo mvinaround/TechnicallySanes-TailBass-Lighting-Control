@@ -109,6 +109,8 @@ namespace Tailbass_Lighting_Control
 			BPMStopwatchActive = false;
 			BPMReadable = 128.00;
 			this.KeyPreview = true;
+			this.AutoScaleMode = AutoScaleMode.Dpi;
+
 		}
 
 		public static Int32 ColourSelectMulti()
