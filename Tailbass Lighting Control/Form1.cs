@@ -1566,5 +1566,10 @@ namespace Tailbass_Lighting_Control
 			Tailbass_Lighting_Control.Settings arf = new Tailbass_Lighting_Control.Settings();
 			arf.Show();
 		}
+
+		private void BPMPanel_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }
