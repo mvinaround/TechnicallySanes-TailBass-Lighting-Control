@@ -22,3 +22,27 @@ F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\R
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.genruntimeconfig.cache
 F:\Users\Jamie\Dropbox\Tailbass Lighting Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\ref\Tailbass Lighting Control.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.exe
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.deps.json
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.runtimeconfig.json
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Release\net6.0-windows10.0.18362.0\WinRT.Runtime.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.AssemblyReference.cache
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.MainUI.resources
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.OBSLayer.resources
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.Properties.Resources.resources
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.SceneController.resources
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.Settings.resources
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.GenerateResource.cache
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.AssemblyInfoInputs.cache
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.AssemblyInfo.cs
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.CopyComplete
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\refint\Tailbass Lighting Control.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\Tailbass Lighting Control.genruntimeconfig.cache
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Release\net6.0-windows10.0.18362.0\ref\Tailbass Lighting Control.dll

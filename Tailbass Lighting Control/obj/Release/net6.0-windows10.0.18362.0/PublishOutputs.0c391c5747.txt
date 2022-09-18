@@ -1,0 +1,7 @@
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Tailbass Lighting Control.exe
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Tailbass Lighting Control.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Tailbass Lighting Control.deps.json
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Tailbass Lighting Control.runtimeconfig.json
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Tailbass Lighting Control.pdb
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\Microsoft.Windows.SDK.NET.dll
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\Compiled\WinRT.Runtime.dll
