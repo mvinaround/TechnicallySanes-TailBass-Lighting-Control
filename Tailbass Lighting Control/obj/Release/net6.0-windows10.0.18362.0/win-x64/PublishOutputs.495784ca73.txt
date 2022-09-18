@@ -1,0 +1,2 @@
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\publish\Tailbass Lighting Control.pdb
+C:\Users\Jamie\Source\Repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\publish\Tailbass Lighting Control.exe
