@@ -22,3 +22,27 @@ C:\Users\Jamie\source\repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass 
 C:\Users\Jamie\source\repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
 C:\Users\Jamie\source\repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.genruntimeconfig.cache
 C:\Users\Jamie\source\repos\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\ref\Tailbass Lighting Control.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.exe
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.deps.json
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.runtimeconfig.json
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\Microsoft.Windows.SDK.NET.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\bin\Debug\net6.0-windows10.0.18362.0\WinRT.Runtime.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.AssemblyReference.cache
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.MainUI.resources
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.OBSLayer.resources
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.Properties.Resources.resources
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.SceneController.resources
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass_Lighting_Control.Settings.resources
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.GenerateResource.cache
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.AssemblyInfoInputs.cache
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.AssemblyInfo.cs
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.CoreCompileInputs.cache
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.csproj.CopyComplete
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\refint\Tailbass Lighting Control.dll
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.pdb
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\Tailbass Lighting Control.genruntimeconfig.cache
+C:\Projects\GithubVR\TechnicallySanes-TailBass-Lighting-Control\Tailbass Lighting Control\obj\Debug\net6.0-windows10.0.18362.0\ref\Tailbass Lighting Control.dll
