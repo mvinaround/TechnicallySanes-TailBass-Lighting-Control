@@ -8,28 +8,28 @@
     "net6.0-windows10.0.18362": []
   },
   "packageFolders": {
-    "C:\\Users\\Owner\\.nuget\\packages\\": {},
+    "C:\\Users\\Jamie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\GithubVR\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\Tailbass Lighting Control.csproj",
+      "projectUniqueName": "C:\\Users\\Jamie\\Source\\Repos\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\Tailbass Lighting Control.csproj",
       "projectName": "TechSanesTailbassLightingControl",
-      "projectPath": "C:\\Projects\\GithubVR\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\Tailbass Lighting Control.csproj",
-      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\GithubVR\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\obj\\",
+      "projectPath": "C:\\Users\\Jamie\\Source\\Repos\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\Tailbass Lighting Control.csproj",
+      "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jamie\\Source\\Repos\\TechnicallySanes-TailBass-Lighting-Control\\Tailbass Lighting Control\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows10.0.18362"
+        "net6.0-windows10.0.18362.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -56,14 +56,15 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.18362.26, 10.0.18362.26]"
+            "version": "[10.0.18362.27, 10.0.18362.27]"
           }
         ],
         "frameworkReferences": {
@@ -77,7 +78,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
